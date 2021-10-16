@@ -10,8 +10,12 @@ def write(dictionary):
     def print_list():
         return jsonify(dictionary)
 
+    @app.route('/numbers/<string:stateName>/')
+    def print_state(stateName):
+        return jsonify(dictionary[stateName])
     if __name__ == '__main__':
         app.run()
+    
 
 
 
