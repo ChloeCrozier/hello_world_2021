@@ -4,8 +4,6 @@ from flask import Flask
 import os
 app = Flask(__name__)
 from flask import jsonify
-from flask_cors import CORS
-CORS(app)
 
 def write(dictionary):
     @app.route('/numbers/')
