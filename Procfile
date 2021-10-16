@@ -1,1 +1,1 @@
-web: python3 HelloWorld.py 
+web: gunicorn --bind 0.0.0.0:$PORT HelloWorld:app
