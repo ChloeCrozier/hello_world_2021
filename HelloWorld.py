@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 app = Flask(__name__)
 
 dictionary ={
@@ -20,4 +21,6 @@ from flask import jsonify
 def print_list():
     return jsonify(dictionary)
 
-app.run()
+port = os.environ.get('PORT')
+
+app.run(port = port)
