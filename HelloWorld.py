@@ -13,6 +13,6 @@ from flask import jsonify
 def print_list():
     return jsonify(dictionary)
 
-port = os.environ.get('PORT')
+#port = os.environ.get('PORT')
 
-app.run(debug = True)
+app.run()
