@@ -15,4 +15,4 @@ def print_list():
 
 port = os.environ.get('PORT')
 
-app.run()
+app.run(debug = True)

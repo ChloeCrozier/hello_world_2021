@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT HelloWorld:app
+web: gunicorn HelloWorld:app
