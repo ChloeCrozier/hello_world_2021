@@ -15,5 +15,5 @@ def print_list():
 
 #port = os.environ.get('PORT')
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     app.run()
